@@ -12,6 +12,7 @@ This allows you to select all your enex files for import into Evernote Desktop i
 * Unzip
 * Download this project's zip file at https://github.com/davious/PrepCatchZipForEvernoteDesktop/archive/master.zip
 * Unzip
+
 ```
 cd ~/Downloads/Catch Notes/
 ~/Downloads/PrepCatchZipForEvernoteDesktop-master/prepcatch.py
