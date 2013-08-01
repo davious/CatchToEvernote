@@ -25,7 +25,7 @@ Copied 40 notes into Space Two Import directory.
 
 Here is what I do to switch from Catch to Evernote
  
-* Logged into Catch.com
+* Log onto Catch.com
 * Under my username, upper right, I select the Export menu item (https://catch.com/tools/export/new)
 * I click on the Zip Archive File button, under Download
 * I extract the Zip File
