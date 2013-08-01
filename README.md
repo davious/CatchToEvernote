@@ -1,10 +1,10 @@
 # Prep Catch Zip for Evernote Desktop
 
-A python script you execute on a Catch Notes.zip extraction directory.
+This is a python script to help ease the transistion from Catch Notes to Evernote.
 
-The script copies all note.enex files to one directory and the file is renamed to the folder name it was located in.
+The script copies all note.enex files in the "All Notes" directory of a Catch Note Archive into a "All Notes Gathered" directory.
 
-This allows you to select all your enex file in one file-selection action. 
+This allows you to select all your enex files for import into Evernote Desktop in one go. 
 
 ## Mac/Linux Instructions
 
