@@ -17,3 +17,19 @@ cd ~/Downloads/Catch Notes/
 Copied 1219 notes into All Notes Gathered directory.
  Added ' Catch Notes.enex' to have Evernote start with a nice folder name.
 ```
+
+## Details
+
+Here is what I did to switch from Catch to Evernote
+ 
+* Logged into Catch.com
+* Under my username, upper right, I selected the Export menu item
+* I ended up at https://catch.com/tools/export/new
+* I clicked on the Zip Archive File button, under Download
+* Extract the Zip File
+* Ran prepcatch.py
+* In Evernote Desktop
+* File > Import
+* Select all my .enex files for upload in "All Notes Gathered"
+* Clicked Open
+* Done
