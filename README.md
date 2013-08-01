@@ -30,6 +30,7 @@ Here is what I did to switch from Catch to Evernote
 * Ran prepcatch.py
 * In Evernote Desktop
 * File > Import
-* Select all my .enex files for upload in "All Notes Gathered"
+* Locate the "All Notes Gathered" directory in the extracted "Catch Notes" directory
+* Selected all the files using cntl-a or, for mac, command-a
 * Clicked Open
 * Done
