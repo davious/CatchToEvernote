@@ -2,7 +2,7 @@
 
 This is a python script to help ease the transistion from Catch Notes to Evernote.
 
-The script copies all note.enex files in the "All Notes" directory of a Catch Note Archive into a "All Notes Gathered" directory.
+The script copies all note.enex files in the "All Notes" directory of a Catch Note Archive extract into a "All Notes Gathered" directory.
 
 This allows you to select all your enex files for import into Evernote Desktop in one go. 
 
