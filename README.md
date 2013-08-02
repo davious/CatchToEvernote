@@ -56,4 +56,6 @@ Copied 60 notes into Space One Import directory.
 Copied 40 notes into Space Two Import directory.
 ```
 
+Note: Evernote Desktop for Windows currently allows you to import one file at a time. An enchancement to this script will pack all the notes into one upload file per space.
+
 
