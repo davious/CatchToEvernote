@@ -6,21 +6,6 @@ In the Catch Notes Archive, each Space has its own directory. Within each Space,
   
 The script, for each space, creates a folder called "{Space Name} Import", and copies all those nested note.enex files into it so you can import your .enex files into Evernote Desktop with one upload action per Space. 
 
-## Mac/Linux Instructions
-
-* Download Catch Archive Zip File at https://catch.com/tools/export/new
-* Unzip
-* Download this project's zip file at https://github.com/davious/PrepCatchZipForEvernoteDesktop/archive/master.zip
-* Unzip
-
-```
-cd ~/Downloads/Catch Notes/
-~/Downloads/PrepCatchZipForEvernoteDesktop-master/prepcatch.py
-Copied 100 notes into All Notes Import directory.
-Copied 60 notes into Space One Import directory.
-Copied 40 notes into Space Two Import directory.
-```
-
 ## Details
 
 Here is what I do to switch from Catch to Evernote
@@ -38,4 +23,37 @@ Here is what I do to switch from Catch to Evernote
     * Select all the files using cntl-a or, for mac, command-a
     * Click Open
 * Done
+
+## Mac/Linux Instructions
+
+* Download Catch Archive Zip File at https://catch.com/tools/export/new
+* Unzip
+* Download this project's zip file at https://github.com/davious/PrepCatchZipForEvernoteDesktop/archive/master.zip
+* Unzip
+
+```
+cd ~/Downloads/Catch Notes/
+~/Downloads/PrepCatchZipForEvernoteDesktop-master/prepcatch.py
+Copied 100 notes into All Notes Import directory.
+Copied 60 notes into Space One Import directory.
+Copied 40 notes into Space Two Import directory.
+```
+
+## PC Instructions
+
+* Install Python http://python.org/download/ [Windows 64bit (newer computers)](http://python.org/ftp/python/2.7.5/python-2.7.5.amd64.msi) or [Windows 32bit (older computers)](http://python.org/ftp/python/2.7.5/python-2.7.5.msi)
+* Download Catch Archive Zip File at https://catch.com/tools/export/new
+* Unzip
+* Download this project's zip file at https://github.com/davious/PrepCatchZipForEvernoteDesktop/archive/master.zip
+* Unzip
+
+Run cmd
+```
+cd C:\Users\yourusername\Downloads\Catch Notes Full Name\Catch Notes\
+C:\Python27\python C:\Users\yourusername\Downloads\PrepCatchZipForEvernoteDesktop-master\PrepCatchZipForEvernoteDesktop-master\prepcatch.py
+Copied 100 notes into All Notes Import directory.
+Copied 60 notes into Space One Import directory.
+Copied 40 notes into Space Two Import directory.
+```
+
 
