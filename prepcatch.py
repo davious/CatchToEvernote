@@ -1,39 +1,40 @@
 #!/usr/bin/python
 import os
-import datetime
+import zipfile
 
-date = datetime.datetime.now().strftime("%Y%m%dT%H%M%SZ")
-note_xml_template = """<!DOCTYPE en-export SYSTEM "http://xml.evernote.com/pub/evernote-export2.dtd"><en-export export-date="%(date)s" application="Catch" version="">%(notes)s</en-export>"""
-
-def write_enex(source_dir, notes_xml):
-	folder_naming_file_name = source_dir + ".enex"
-	folder_naming_file = open(folder_naming_file_name, "w")
-	folder_naming_file.write(notes_xml)
-	folder_naming_file.close()
-	return folder_naming_file_name
+def ensure_dir(f):
+	d = os.path.dirname(f)
+	if not os.path.exists(d):
+		os.makedirs(d)
 
 def prepcatch():
-	source_dir = "All Notes"
-	dirs = [dir for dir in os.listdir(".") if os.path.isdir(dir)]
-	if source_dir not in dirs:
-		print "I did not see an %s subdirectory, \nplease run the script within the top folder of the Catch Notes.zip extract" % source_dir
-		return
+	zip_file_names = [zip_file_name for zip_file_name in os.listdir(".") \
+					if zip_file_name.startswith("Catch Notes") \
+					and zip_file_name.endswith(".zip")]
 	
-	for source_dir in dirs:
-		notes = []
-		note_dirs = [dir for dir in os.listdir(source_dir) \
-				if os.path.isdir(os.path.join(source_dir, dir))]
-		for dir in note_dirs:
-			source_file = os.path.join(source_dir, dir, "note.enex")
-			note_file = open(source_file)
-			note_xml = note_file.read()
-			note_file.close()
-			note_xml = note_xml[note_xml.index("<note>"):note_xml.index("</note>") + len("</note>")]
-			notes.append(note_xml)
-		notes_xml = note_xml_template % {"notes": "".join(notes), "date" : date }
-		target_file = write_enex(source_dir, notes_xml)
+	if not len(zip_file_names):
+		print "I did not see an Catch Notes .zip file,\n please run the script in the directory of the exported Catch Notes .zip file"
+	
+	zip_file_name = zip_file_names[0]
+	export_dir = zip_file_name[:-4] + " Attachments"
+	os.mkdir(export_dir)
 
-		print "Copied %s notes into %s" % (len(note_dirs), target_file)
+	zip_file = zipfile.ZipFile(zip_file_name, "r")
+
+	attachments = [file_name for file_name in zip_file.namelist() \
+			   if not (file_name.endswith(".html") \
+					 or file_name.endswith(".enex") \
+					 or file_name.endswith(".txt"))]
+	for attachment in attachments:
+		data = zip_file.read(attachment)
+		paths = attachment.split(os.sep)
+		target_file = os.path.join(export_dir, paths[2] + paths[3][paths[3].find('.'):])
+		ensure_dir(target_file)
+		target_file = open(target_file, "w")
+		target_file.write(data)
+		target_file.close()
+
+	print "Copied %s attachments into %s" % (len(attachments), export_dir)
 
 if __name__ == "__main__":
 	prepcatch()

@@ -1,20 +1,21 @@
-# Prep Catch Zip for Evernote Desktop
+# Prep Catch Zip Attachments for Evernote Desktop
 
-This is a python script to help ease the transition from Catch Notes to Evernote.
+This is a python script to pick out attachments from Catch Notes to Evernote.
 
-In the Catch Notes Archive, each Space has its own directory. Within each Space, each note is placed in its own directory. To import them into Evernote, you have to select each note individually.
+In the Catch Notes Archive Attachments are nested away in there own note directory. To import them into Evernote, you have to hunt through and select each attachment individually.
   
-The script, for each space, creates a .enex file and copies all those nested note.enex files into it so you can import notes into Evernote Desktop with one upload action per Space. 
+The script, copies each attachment into an Attachments Directory so you have one folder to select attachments from. 
 
 ## Details
 
-Here is what I do to switch from Catch to Evernote
+Here is what I do to switch from Catch to Evernoted
  
 * Log into Catch.com
 * Under my username, upper right, I select the Export menu item (https://catch.com/tools/export/new)
 * I click on the Zip Archive File button, under Download
 * I extract the Zip File
-* Using the command line, I go to the "Catch Notes" directory I just extracted
+* I go into Evernote Desktop and for each space, import the notes.enex file and rename the import folder.
+* Using the command line, I go to Downloads directory
 * I run prepcatch.py
 * In the Evernote Desktop app, for each Space
     * File > Import
@@ -33,9 +34,7 @@ Here is what I do to switch from Catch to Evernote
 ```
 cd ~/Downloads/Catch Notes/
 ~/Downloads/PrepCatchZipForEvernoteDesktop-master/prepcatch.py
-Copied 100 notes into All Notes.enex
-Copied 60 notes into Space One.enex
-Copied 40 notes into Space Two.enex
+Copied 212 attachments into Catch Notes username exported 2013-8-1 Attachments.
 ```
 
 ## PC Instructions
@@ -50,8 +49,6 @@ Run cmd
 ```
 cd C:\Users\yourusername\Downloads\Catch Notes Full Name\Catch Notes\
 C:\Python27\python C:\Users\yourusername\Downloads\PrepCatchZipForEvernoteDesktop-master\PrepCatchZipForEvernoteDesktop-master\prepcatch.py
-Copied 100 notes into All Notes.enex
-Copied 60 notes into Space One.enex
-Copied 40 notes into Space Two.enex
+Copied 212 attachments into Catch Notes username exported 2013-8-1 Attachments.
 ```
 
