@@ -31,7 +31,7 @@ def prepcatch():
 	space_files = [file_name for file_name in zip_file.namelist() if file_name.endswith("notes.enex")]
 	for space_file in space_files:
 		data = zip_file.read(space_file)
-		paths = space_file.split(os.sep)
+		paths = space_file.split('/')
 		space = paths[1]
 		target_file = os.path.join(export_dir, space + ".enex")
 		write_file(target_file, data)
@@ -47,7 +47,7 @@ def prepcatch():
 		os.mkdir(export_dir)
 	for attachment in attachments:
 		data = zip_file.read(attachment)
-		paths = attachment.split(os.sep)
+		paths = attachment.split('/')
 		target_file = os.path.join(export_dir, paths[2] + paths[3][paths[3].find('.'):])
 		write_file(target_file, data)
 	if attachments:
