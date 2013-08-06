@@ -2,7 +2,12 @@
 
 This is a python script to pick out notes and attachments from Catch Notes to Evernote.
 
-Download your export file and run this script. It creates an import file for each space's notes and an attachments folder with all the attachments in a file with the name of the note title. 
+The script works on your unextracted Catch Notes Export.zip file and creates a custom extract folder.
+
+In the extract folder there are the following:
+* An "All Notes.enex"
+* A {Space}.enex file, per space
+* An attachments folder with all your attachments with the title of the note as the file name. This way you can look at the file name, type the title into evernote search and re-attach the attachment to the related note.
 
 ## Details
 
