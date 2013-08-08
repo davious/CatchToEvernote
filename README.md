@@ -20,12 +20,12 @@ Here is what I do to switch from Catch to Evernoted
 * I run prepcatch.py
 * In the Evernote Desktop app, for each Space
     * File > Import
-    * Go into the Catch Notes Import folder the script creates
+    * Go into the Catch Notes Extract folder the script creates
     * Select the .enex file with the space's name
     * Click Open
     * Done
 * Attachments
-    * Go into the Catch Notes Import > Attachments folder the script creates
+    * Go into the Catch Notes Extract > Attachments folder the script creates
     * Type the name of the note (from the file name) into the evernote desktop search
     * Drag-and-drop the attachment into the note
     * Delete the attachment from the Attachment folder
@@ -41,7 +41,7 @@ Here is what I do to switch from Catch to Evernoted
 cd ~/Downloads/Catch Notes/
 ~/Downloads/PrepCatchZipForEvernoteDesktop-master/prepcatch.py
 Extracted 1 All Notes.enex file and 6 {Space}.enex files into Catch Notes username exported 2013-8-1 Extract
-Extracted 212 attachments into Catch Notes username exported 2013-8-1 Import/Attachments.
+Extracted 212 attachments into Catch Notes username exported 2013-8-1 Extract/Attachments.
 ```
 
 ## PC Instructions
@@ -56,6 +56,6 @@ Run cmd
 cd C:\Users\yourusername\Downloads\Catch Notes Full Name\Catch Notes\
 C:\Python27\python C:\Users\yourusername\Downloads\PrepCatchZipForEvernoteDesktop-master\PrepCatchZipForEvernoteDesktop-master\prepcatch.py
 Extracted 1 All Notes.enex file and 6 {Space}.enex files into Catch Notes username exported 2013-8-1 Extract
-Extracted 212 attachments into Catch Notes username exported 2013-8-1 Import/Attachments.
+Extracted 212 attachments into Catch Notes username exported 2013-8-1 Extract/Attachments.
 ```
 
