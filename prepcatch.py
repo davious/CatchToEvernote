@@ -23,7 +23,7 @@ def prepcatch():
 		print "I did not see an Catch Notes .zip file,\n please run the script in the directory of the exported Catch Notes .zip file"
 	
 	zip_file_name = zip_file_names[0]
-	export_dir = zip_file_name[:-4] + " Import"
+	export_dir = zip_file_name[:-4] + " Extract"
 	os.mkdir(export_dir)
 
 	zip_file = zipfile.ZipFile(zip_file_name, "r")
