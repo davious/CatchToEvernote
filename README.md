@@ -40,8 +40,8 @@ Here is what I do to switch from Catch to Evernoted
 ```
 cd ~/Downloads/Catch Notes/
 ~/Downloads/PrepCatchZipForEvernoteDesktop-master/prepcatch.py
-Copied 1 All Notes.enex file and 6 {Space}.enex files into Catch Notes username exported 2013-8-1 Import
-Copied 212 attachments into Catch Notes username exported 2013-8-1 Import/Attachments.
+Extracted 1 All Notes.enex file and 6 {Space}.enex files into Catch Notes username exported 2013-8-1 Import
+Extracted 212 attachments into Catch Notes username exported 2013-8-1 Import/Attachments.
 ```
 
 ## PC Instructions
@@ -55,7 +55,7 @@ Run cmd
 ```
 cd C:\Users\yourusername\Downloads\Catch Notes Full Name\Catch Notes\
 C:\Python27\python C:\Users\yourusername\Downloads\PrepCatchZipForEvernoteDesktop-master\PrepCatchZipForEvernoteDesktop-master\prepcatch.py
-Copied 1 All Notes.enex file and 6 {Space}.enex files into Catch Notes username exported 2013-8-1 Import
-Copied 212 attachments into Catch Notes username exported 2013-8-1 Import/Attachments.
+Extracted 1 All Notes.enex file and 6 {Space}.enex files into Catch Notes username exported 2013-8-1 Import
+Extracted 212 attachments into Catch Notes username exported 2013-8-1 Import/Attachments.
 ```
 

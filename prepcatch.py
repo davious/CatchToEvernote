@@ -36,7 +36,7 @@ def prepcatch():
 		target_file = os.path.join(export_dir, space + ".enex")
 		write_file(target_file, data)
 
-	print "Copied 1 All Notes.enex file and %s {Space}.enex files into %s" % (len(space_files) - 1, export_dir)
+	print "Extracted 1 All Notes.enex file and %s {Space}.enex files into %s" % (len(space_files) - 1, export_dir)
 
 	attachments = [file_name for file_name in zip_file.namelist() \
 					if not (file_name.endswith(".html") \
@@ -51,7 +51,7 @@ def prepcatch():
 		target_file = os.path.join(export_dir, paths[2] + paths[3][paths[3].find('.'):])
 		write_file(target_file, data)
 	if attachments:
-		print "Copied %s attachments into %s" % (len(attachments), export_dir)
+		print "Extracted %s attachments into %s" % (len(attachments), export_dir)
 
 if __name__ == "__main__":
 	prepcatch()
