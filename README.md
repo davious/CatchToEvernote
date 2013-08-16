@@ -1,6 +1,97 @@
 # Prep Catch Zip for Evernote Desktop
 
-This is a python script to pick out notes and attachments from Catch Notes so they'll be ready to import them into Evernote.
+This is a couple of python scripts to transition from Catch to Evernote.
+
+## autocatch
+
+This script automatically loads all your notes from your Catch Notes.zip.
+
+This script requires you to use your developer token provided by Evernote. You can find it at https://www.evernote.com/api/DeveloperToken.action
+
+A developer token looks like this
+
+```
+S=s27:U=2df34c:E=147d74d2653:C=1407f9bfa57:P=1cd:A=en-devtoken:V=2:H=ba73ea24eff00593b64a9d6a0163fc3e
+```
+
+You can test this script against a sandbox account. To get a sandbox developer account and token, create an account at https://sandbox.evernote.com/ and then go to https://sandbox.evernote.com/api/DeveloperToken.action
+
+This script also requires a couple python packages to be installed: evernote and lxml
+
+### Details
+
+Here is what I do to switch from Catch to Evernote
+ 
+* Log into Catch.com
+* Under my username, upper right, I select the Export menu item (https://catch.com/tools/export/new)
+* I click on the Zip Archive File button, under Download
+* Using the command line, I go to Downloads directory
+* I run autocatch.py
+
+### Mac/Linux Instructions
+
+#### Install python packages
+```
+sudo easy_install evernote lxml
+```
+
+Note: On a mac, if you have trouble with the lxml easy_install, see http://stackoverflow.com/questions/8473066/gcc-4-2-failed-with-exit-status-1
+
+#### Download Catch Export and this script
+* Download Catch Archive Zip File at https://catch.com/tools/export/new
+    * no need to unzip
+* Download and unzip this project's zip file at https://github.com/davious/PrepCatchZipForEvernoteDesktop/archive/master.zip
+
+#### run autocatch
+```
+cd ~/Downloads/Catch Notes/
+../PrepCatchZipForEvernoteDesktop-master/autocatch.py &lt;developer token&gt;
+Added 'Space 1' Notebook and uploading its 15 notes...
+..... .@.@#...# ..@... 
+Completed 'Space 1' Notebook upload: uploaded 15 notes, 3 attachments, 2 tags
+Added 'Space 2' Notebook and uploading its 10 notes...
+.#.@#..@.# .@.#.@#..
+Completed 'Space 2' Notebook upload: uploaded 10 notes, 5 attachments, 25 tags
+```
+
+### symbol legend
+
+* ``.`` = note added
+* ``@`` = attachment(s) with note
+* ``#`` = tags(s) with note
+* ``"`` = note already exists from a previous import attempt
+
+### PC Instructions
+
+#### Install python and additional python packages
+* Install Python http://python.org/download/ [Windows 64bit (newer computers)](http://python.org/ftp/python/2.7.5/python-2.7.5.amd64.msi) or [Windows 32bit (older computers)](http://python.org/ftp/python/2.7.5/python-2.7.5.msi)
+* Install additional python packages
+```
+C:\Python27\Scripts\easy_install evernote lxml
+```
+
+#### Download Catch Export and this script
+* Download Catch Archive Zip File at https://catch.com/tools/export/new
+    * No need to unzip
+* Download and unzip this project's zip file at https://github.com/davious/PrepCatchZipForEvernoteDesktop/archive/master.zip
+
+#### run autocatch
+
+Run cmd
+```
+cd C:\Users\yourusername\Downloads\Catch Notes Full Name\Catch Notes\
+C:\Python27\python C:\Users\yourusername\Downloads\PrepCatchZipForEvernoteDesktop\\PrepCatchZipForEvernoteDesktop-master\autocatch.py &lt;developer token&gt;
+Added 'Space 1' Notebook and uploading its 15 notes...
+..... .@.@#...# ..@... 
+Completed 'Space 1' Notebook upload: uploaded 15 notes, 3 attachments, 2 tags
+Added 'Space 2' Notebook and uploading its 10 notes...
+.#.@#..@.# .@.#.@#..
+Completed 'Space 2' Notebook upload: uploaded 10 notes, 5 attachments, 25 tags
+```
+
+## prepcatch
+
+This was an earlier used script, recommended for people who don't have a lot of attachments or who don't what to use a developer token.
 
 The script works on your unextracted Catch Notes Export.zip file and creates a custom extract folder.
 
@@ -9,9 +100,9 @@ The in resulting extracted Extract folder there are the following:
 * A {Space}.enex file, per space
 * An attachments folder with all your attachments with the title of the note as the file name. This way you can look at the file name, type the title into evernote search and re-attach the attachment to the related note.
 
-## Details
+### Details
 
-Here is what I do to switch from Catch to Evernoted
+Here is what I do to switch from Catch to Evernote
  
 * Log into Catch.com
 * Under my username, upper right, I select the Export menu item (https://catch.com/tools/export/new)
@@ -31,7 +122,7 @@ Here is what I do to switch from Catch to Evernoted
     * Delete the attachment from the Attachment folder
 
 
-## Mac/Linux Instructions
+### Mac/Linux Instructions
 
 * Download Catch Archive Zip File at https://catch.com/tools/export/new
 * Download this project's zip file at https://github.com/davious/PrepCatchZipForEvernoteDesktop/archive/master.zip
@@ -39,12 +130,12 @@ Here is what I do to switch from Catch to Evernoted
 
 ```
 cd ~/Downloads/Catch Notes/
-~/Downloads/PrepCatchZipForEvernoteDesktop-master/prepcatch.py
+../PrepCatchZipForEvernoteDesktop-master/prepcatch.py
 Extracted 1 All Notes.enex file and 6 {Space}.enex files into Catch Notes username exported 2013-8-1 Extract
 Extracted 212 attachments into Catch Notes username exported 2013-8-1 Extract/Attachments.
 ```
 
-## PC Instructions
+### PC Instructions
 
 * Install Python http://python.org/download/ [Windows 64bit (newer computers)](http://python.org/ftp/python/2.7.5/python-2.7.5.amd64.msi) or [Windows 32bit (older computers)](http://python.org/ftp/python/2.7.5/python-2.7.5.msi)
 * Download Catch Archive Zip File at https://catch.com/tools/export/new
