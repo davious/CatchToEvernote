@@ -28,6 +28,16 @@ Here is what I do to switch from Catch to Evernote
 * Using the command line, I go to Downloads directory
 * I run autocatch.py
 
+### symbol legend
+
+Update progress is indicated by symbols
+
+* ``.`` = note added
+* ``@`` = attachment(s) with note
+* ``#`` = tags(s) with note
+* ``"`` = note already exists from a previous import attempt
+
+
 ### Mac/Linux Instructions
 
 #### Install python packages
@@ -40,12 +50,12 @@ Note: On a mac, if you have trouble with the lxml easy_install, see http://stack
 #### Download Catch Export and this script
 * Download Catch Archive Zip File at https://catch.com/tools/export/new
     * no need to unzip
-* Download and unzip this project's zip file at https://github.com/davious/PrepCatchZipForEvernoteDesktop/archive/master.zip
+* Download and unzip this project's zip file at https://github.com/davious/CatchToEvernote/archive/master.zip
 
 #### run autocatch
 ```
 cd ~/Downloads/Catch Notes/
-../PrepCatchZipForEvernoteDesktop-master/autocatch.py &lt;developer token&gt;
+../CatchToEvernote-master/autocatch.py &lt;developer token&gt;
 Added 'Space 1' Notebook and uploading its 15 notes...
 ..... .@.@#...# ..@... 
 Completed 'Space 1' Notebook upload: uploaded 15 notes, 3 attachments, 2 tags
@@ -53,13 +63,6 @@ Added 'Space 2' Notebook and uploading its 10 notes...
 .#.@#..@.# .@.#.@#..
 Completed 'Space 2' Notebook upload: uploaded 10 notes, 5 attachments, 25 tags
 ```
-
-### symbol legend
-
-* ``.`` = note added
-* ``@`` = attachment(s) with note
-* ``#`` = tags(s) with note
-* ``"`` = note already exists from a previous import attempt
 
 ### PC Instructions
 
@@ -73,14 +76,14 @@ C:\Python27\Scripts\easy_install evernote lxml
 #### Download Catch Export and this script
 * Download Catch Archive Zip File at https://catch.com/tools/export/new
     * No need to unzip
-* Download and unzip this project's zip file at https://github.com/davious/PrepCatchZipForEvernoteDesktop/archive/master.zip
+* Download and unzip this project's zip file at https://github.com/davious/CatchToEvernote/archive/master.zip
 
 #### run autocatch
 
 Run cmd
 ```
 cd C:\Users\yourusername\Downloads\Catch Notes Full Name\Catch Notes\
-C:\Python27\python C:\Users\yourusername\Downloads\PrepCatchZipForEvernoteDesktop\\PrepCatchZipForEvernoteDesktop-master\autocatch.py &lt;developer token&gt;
+C:\Python27\python C:\Users\yourusername\Downloads\CatchToEvernote\\CatchToEvernote-master\autocatch.py &lt;developer token&gt;
 Added 'Space 1' Notebook and uploading its 15 notes...
 ..... .@.@#...# ..@... 
 Completed 'Space 1' Notebook upload: uploaded 15 notes, 3 attachments, 2 tags
@@ -125,12 +128,12 @@ Here is what I do to switch from Catch to Evernote
 ### Mac/Linux Instructions
 
 * Download Catch Archive Zip File at https://catch.com/tools/export/new
-* Download this project's zip file at https://github.com/davious/PrepCatchZipForEvernoteDesktop/archive/master.zip
+* Download this project's zip file at https://github.com/davious/CatchToEvernote/archive/master.zip
 * Unzip
 
 ```
 cd ~/Downloads/Catch Notes/
-../PrepCatchZipForEvernoteDesktop-master/prepcatch.py
+../CatchToEvernote-master/prepcatch.py
 Extracted 1 All Notes.enex file and 6 {Space}.enex files into Catch Notes username exported 2013-8-1 Extract
 Extracted 212 attachments into Catch Notes username exported 2013-8-1 Extract/Attachments.
 ```
@@ -139,13 +142,13 @@ Extracted 212 attachments into Catch Notes username exported 2013-8-1 Extract/At
 
 * Install Python http://python.org/download/ [Windows 64bit (newer computers)](http://python.org/ftp/python/2.7.5/python-2.7.5.amd64.msi) or [Windows 32bit (older computers)](http://python.org/ftp/python/2.7.5/python-2.7.5.msi)
 * Download Catch Archive Zip File at https://catch.com/tools/export/new
-* Download this project's zip file at https://github.com/davious/PrepCatchZipForEvernoteDesktop/archive/master.zip
+* Download this project's zip file at https://github.com/davious/CatchToEvernote/archive/master.zip
 * Unzip
 
 Run cmd
 ```
 cd C:\Users\yourusername\Downloads\Catch Notes Full Name\Catch Notes\
-C:\Python27\python C:\Users\yourusername\Downloads\PrepCatchZipForEvernoteDesktop-master\PrepCatchZipForEvernoteDesktop-master\prepcatch.py
+C:\Python27\python C:\Users\yourusername\Downloads\CatchToEvernote-master\CatchToEvernote-master\prepcatch.py
 Extracted 1 All Notes.enex file and 6 {Space}.enex files into Catch Notes username exported 2013-8-1 Extract
 Extracted 212 attachments into Catch Notes username exported 2013-8-1 Extract/Attachments.
 ```
