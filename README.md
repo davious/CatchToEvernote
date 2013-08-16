@@ -54,8 +54,8 @@ Note: On a mac, if you have trouble with the lxml easy_install, see http://stack
 
 #### run autocatch
 ```
-cd ~/Downloads/Catch Notes/
-../CatchToEvernote-master/autocatch.py &lt;developer token&gt;
+cd ~/Downloads/
+CatchToEvernote-master/autocatch.py &lt;developer token&gt;
 Added 'Space 1' Notebook and uploading its 15 notes...
 ..... .@.@#...# ..@... 
 Completed 'Space 1' Notebook upload: uploaded 15 notes, 3 attachments, 2 tags
@@ -82,8 +82,8 @@ C:\Python27\Scripts\easy_install evernote lxml
 
 Run cmd
 ```
-cd C:\Users\yourusername\Downloads\Catch Notes Full Name\Catch Notes\
-C:\Python27\python C:\Users\yourusername\Downloads\CatchToEvernote\\CatchToEvernote-master\autocatch.py &lt;developer token&gt;
+cd C:\Users\yourusername\Downloads\
+C:\Python27\python C:\Users\yourusername\Downloads\CatchToEvernote\CatchToEvernote-master\autocatch.py &lt;developer token&gt;
 Added 'Space 1' Notebook and uploading its 15 notes...
 ..... .@.@#...# ..@... 
 Completed 'Space 1' Notebook upload: uploaded 15 notes, 3 attachments, 2 tags
@@ -132,8 +132,8 @@ Here is what I do to switch from Catch to Evernote
 * Unzip
 
 ```
-cd ~/Downloads/Catch Notes/
-../CatchToEvernote-master/prepcatch.py
+cd ~/Downloads
+CatchToEvernote-master/prepcatch.py
 Extracted 1 All Notes.enex file and 6 {Space}.enex files into Catch Notes username exported 2013-8-1 Extract
 Extracted 212 attachments into Catch Notes username exported 2013-8-1 Extract/Attachments.
 ```
@@ -147,7 +147,7 @@ Extracted 212 attachments into Catch Notes username exported 2013-8-1 Extract/At
 
 Run cmd
 ```
-cd C:\Users\yourusername\Downloads\Catch Notes Full Name\Catch Notes\
+cd C:\Users\yourusername\Downloads\
 C:\Python27\python C:\Users\yourusername\Downloads\CatchToEvernote-master\CatchToEvernote-master\prepcatch.py
 Extracted 1 All Notes.enex file and 6 {Space}.enex files into Catch Notes username exported 2013-8-1 Extract
 Extracted 212 attachments into Catch Notes username exported 2013-8-1 Extract/Attachments.
