@@ -24,7 +24,6 @@ Here is what I do to switch from Catch to Evernote
  
 * Log into Catch.com
 * Under my username, upper right, I select the Export menu item (https://catch.com/tools/export/new)
-* I click on the Zip Archive File button, under Download
 * Using the command line, I go to Downloads directory
 * I run autocatch.py
 
@@ -109,7 +108,6 @@ Here is what I do to switch from Catch to Evernote
  
 * Log into Catch.com
 * Under my username, upper right, I select the Export menu item (https://catch.com/tools/export/new)
-* I click on the Zip Archive File button, under Download
 * Using the command line, I go to Downloads directory
 * I run prepcatch.py
 * In the Evernote Desktop app, for each Space
