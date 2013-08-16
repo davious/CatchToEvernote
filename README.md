@@ -1,4 +1,4 @@
-# Prep Catch Zip for Evernote Desktop
+# Catch To Evernote
 
 This is a couple of python scripts to transition from Catch to Evernote.
 
