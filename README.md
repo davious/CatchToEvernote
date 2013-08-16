@@ -94,7 +94,7 @@ Completed 'Space 2' Notebook upload: uploaded 10 notes, 5 attachments, 25 tags
 
 ## prepcatch
 
-This was an earlier used script, recommended for people who don't have a lot of attachments or who don't what to use a developer token.
+This was an earlier used script, recommended for people who don't have a lot of attachments or who don't want to use a developer token.
 
 The script works on your unextracted Catch Notes Export.zip file and creates a custom extract folder.
 
