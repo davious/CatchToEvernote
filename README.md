@@ -55,7 +55,7 @@ Note: On a mac, if you have trouble with the lxml easy_install, see http://stack
 #### run autocatch
 ```
 cd ~/Downloads/
-CatchToEvernote-master/autocatch.py &lt;developer token&gt;
+CatchToEvernote-master/autocatch.py <developer token>
 Added 'Space 1' Notebook and uploading its 15 notes...
 ..... .@.@#...# ..@... 
 Completed 'Space 1' Notebook upload: uploaded 15 notes, 3 attachments, 2 tags
@@ -83,7 +83,7 @@ C:\Python27\Scripts\easy_install evernote lxml
 Run cmd
 ```
 cd C:\Users\yourusername\Downloads\
-C:\Python27\python C:\Users\yourusername\Downloads\CatchToEvernote\CatchToEvernote-master\autocatch.py &lt;developer token&gt;
+C:\Python27\python C:\Users\yourusername\Downloads\CatchToEvernote\CatchToEvernote-master\autocatch.py <developer token>
 Added 'Space 1' Notebook and uploading its 15 notes...
 ..... .@.@#...# ..@... 
 Completed 'Space 1' Notebook upload: uploaded 15 notes, 3 attachments, 2 tags
