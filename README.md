@@ -60,7 +60,7 @@ Added 'Space 1' Notebook and uploading its 15 notes...
 Completed 'Space 1' Notebook upload: uploaded 15 notes, 3 attachments, 2 tags
 Added 'Space 2' Notebook and uploading its 10 notes...
 .#.@#..@.# .@.#.@#..
-Completed 'Space 2' Notebook upload: uploaded 10 notes, 5 attachments, 25 tags
+Completed 'Space 2' Notebook upload: uploaded 10 notes, 5 attachments, 5 tags
 ```
 
 ### PC Instructions
@@ -88,7 +88,7 @@ Added 'Space 1' Notebook and uploading its 15 notes...
 Completed 'Space 1' Notebook upload: uploaded 15 notes, 3 attachments, 2 tags
 Added 'Space 2' Notebook and uploading its 10 notes...
 .#.@#..@.# .@.#.@#..
-Completed 'Space 2' Notebook upload: uploaded 10 notes, 5 attachments, 25 tags
+Completed 'Space 2' Notebook upload: uploaded 10 notes, 5 attachments, 5 tags
 ```
 
 ## prepcatch
