@@ -114,8 +114,17 @@ class NoteImporter:
 		filter.notebookGuid = guid
 		spec = NoteStore.NotesMetadataResultSpec()
 		spec.includeCreated = True
-		noteinfos = self.note_store.findNotesMetadata(filter, 0, 100000, spec)
-		createds = [noteinfo.created for noteinfo in noteinfos.notes]
+
+		note_start = 0
+		max_notes = 250
+		createds = []
+		while True:
+			noteinfos = self.note_store.findNotesMetadata(filter, note_start, note_start + max_notes, spec)
+			if not len(noteinfos.notes):
+				break
+			createds.extend([noteinfo.created for noteinfo in noteinfos.notes])
+			note_start += max_notes
+
 		self.already_createds[guid] = {}
 		for created in createds:
 			self.already_createds[guid][created] = True
