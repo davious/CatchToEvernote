@@ -67,16 +67,8 @@ class NoteFile:
 		self.paths = file_name.split('/')
 		if len(self.paths) < 4:
 			raise Exception("not a note path: " + file_name)
-		if 'spaces' in self.paths:
-			# Catch Notes/spaces/All Notes/filename
-			self.space = self.paths[self.paths.index('spaces') + 1]
-		else:
-			self.space = self.paths[1]
-		if 'notes' in self.paths:
-			# Catch Notes/spaces/All Notes/notes/My note/filename
-			self.note = self.paths[self.paths.index('notes') + 1]
-		else:
-			self.note = self.paths[2]
+		self.space = self.paths[-3] if self.paths[-3] != "notes" else self.paths[-4]
+		self.note = self.paths[-2]
 		self.file = self.paths[-1]
 		if self.file in ("note.txt", "note.html"):
 			raise Exception(self.file + " files are not considered NoteFiles: " + file_name)
