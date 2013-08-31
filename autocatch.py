@@ -52,10 +52,12 @@ def get_milliseconds_from_utc(utc):
 def pause(seconds):
 	print
 	seconds += 10
+	original_wait = seconds
 	while seconds:
 		plunk("pushing data too fast for evernote, pausing for %s minutes and %s seconds      \r" % (seconds/60, seconds % 60))
 		sleep(1)
 		seconds -= 1
+	plunk("paused for %s minutes and %s seconds because we were pushing data too fast for evernote\r" % (original_wait/60, original_wait % 60))
 	print
 
 class NoteAlreadyExists(Exception):
